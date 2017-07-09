@@ -1,0 +1,98 @@
+[
+	{
+		"name" : "snack2",
+		"type" : "snack",
+		"description" : "AAAAALorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/snack2.jpg"
+	},
+	{
+		"name" : "desert2",
+		"type" : "desert",
+		"description" : "BBBBLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/desert2.jpg"
+	},
+	{
+		"name" : "dish1",
+		"type" : "dish",
+		"description" : "CCCCLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish1.jpg"
+	},
+	{
+		"name" : "dish2",
+		"type" : "dish",
+		"description" : "XXXXXLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish2.jpg"
+	},
+	{
+		"name" : "snack1",
+		"type" : "snack",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/snack1.jpg"
+	},
+	{
+		"name" : "desert1",
+		"type" : "desert",
+		"description" : "ZZZZLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/desert1.jpg"
+	},
+	{
+		"name" : "dish1",
+		"type" : "dish",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish1.jpg"
+	},
+	{
+		"name" : "dish2",
+		"type" : "dish",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish2.jpg"
+	},
+	{
+		"name" : "snack1",
+		"type" : "snack",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/snack1.jpg"
+	},
+	{
+		"name" : "desert2",
+		"type" : "desert",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/desert2.jpg"
+	},
+	{
+		"name" : "dish2",
+		"type" : "dish",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish2.jpg"
+	},
+	{
+		"name" : "dish2",
+		"type" : "dish",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish2.jpg"
+	},
+	{
+		"name" : "snack1",
+		"type" : "snack",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/snack1.jpg"
+	},
+	{
+		"name" : "desert1",
+		"type" : "desert",
+		"description" : "AAAAALorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/desert1.jpg"
+	},
+	{
+		"name" : "dish1",
+		"type" : "dish",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish1.jpg"
+	},
+	{
+		"name" : "dish2",
+		"type" : "dish",
+		"description" : "ZZZZZLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"imageUrl" : "./images/dish2.jpg"
+	}
+]

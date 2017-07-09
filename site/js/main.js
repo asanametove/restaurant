@@ -12,7 +12,7 @@ $(document).ready(function () {
     slider.start(2000);
 
                     // RESERVATION
-    fillForm();
+    //fillForm();
     getFile("reservation", rsrvUrl, showReservations);
 
     $("#reservationForm").on("submit", function (e) {
@@ -221,7 +221,7 @@ function initTimePicker($element) {
     $("#timePicker").on("keypress", function (e) {
         var ch = getChar(e);
         if(!ch) return true;
-        return ch >= '0' && ch <= '9';
+        return (ch >= '0' && ch <= '9') || ch === ":";
     }).on("blur", function (e) {
         $(this).timespinner("stepUp", 1).timespinner("stepDown", 1);
     });

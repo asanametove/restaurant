@@ -8,19 +8,19 @@
 	{
 		"name" : "Event 2",
 		"date" : "03/01/2017",
-		"description" : "BBBBLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
 		"imageUrl" : "./images/event2.jpg"
 	},
 	{
 		"name" : "Event 3",
 		"date" : "07/01/2017",
-		"description" : "CCCCLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
 		"imageUrl" : "./images/event3.jpg"
 	},
 	{
 		"name" : "Event 4",
 		"date" : "06/01/2017",
-		"description" : "XXXXXLorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque debitis delectus dignissimos dolorum hic impedit maxime modi, nulla, officia possimus qui quibusdam recusandae reiciendis sapiente sint temporibus ut!",
 		"imageUrl" : "./images/event4.jpg"
 	},
 	{

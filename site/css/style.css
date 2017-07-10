@@ -22,6 +22,7 @@
       width: 100%;
       display: flex; }
       .wrapper header nav ul li {
+        position: relative;
         padding: 0 20px;
         border-right: 1px solid red; }
         .wrapper header nav ul li:last-child {
@@ -34,11 +35,16 @@
             color: #fa5; }
         .wrapper header nav ul li .subMenu {
           display: none;
-          position: fixed;
-          width: 70px;
-          padding-top: 10px;
+          position: absolute;
+          margin-left: -20px;
+          padding: 10px 0;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          border-radius: 10px;
           background-color: #777; }
           .wrapper header nav ul li .subMenu li {
+            text-align: center;
             padding: 5px 0;
             border: none; }
             .wrapper header nav ul li .subMenu li a {
@@ -135,9 +141,10 @@
       margin-left: 30px; }
 .wrapper .aboutSection > div {
   background: #fff;
-  -webkit-box-shadow: 20px 20px 30px #777;
-  -moz-box-shadow: 20px 20px 30px #777;
-  box-shadow: 20px 20px 30px #777; }
+  padding: 20px;
+  -webkit-box-shadow: 20px 20px 30px 10px #555;
+  -moz-box-shadow: 20px 20px 30px 10px #555;
+  box-shadow: 20px 20px 30px 10px #555; }
 .wrapper .aboutSection h3 {
   text-align: center;
   font-size: 30px; }
@@ -221,9 +228,9 @@
     width: 300px;
     margin: 20px 30px;
     padding: 20px;
-    -webkit-box-shadow: 20px 20px 30px #777;
-    -moz-box-shadow: 20px 20px 30px #777;
-    box-shadow: 20px 20px 30px #777; }
+    -webkit-box-shadow: 20px 20px 30px 10px #777;
+    -moz-box-shadow: 20px 20px 30px 10px #777;
+    box-shadow: 20px 20px 30px 10px #777; }
     .wrapper .evenstSection .eventsWrapper ul li img {
       width: 100%; }
     .wrapper .evenstSection .eventsWrapper ul li p {

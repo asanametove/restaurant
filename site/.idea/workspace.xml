@@ -27,19 +27,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2360">
-              <caret line="296" column="37" lean-forward="false" selection-start-line="296" selection-start-column="37" selection-end-line="296" selection-end-column="37" />
+            <state relative-caret-position="20">
+              <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
-                <element signature="e#5945#7621#0" expanded="false" />
+                <element signature="e#6360#8036#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -89,7 +89,6 @@
       <find>cons</find>
       <find>777</find>
       <find>#777</find>
-      <find>shadow</find>
       <find>min-wi</find>
       <find>setSortKeys</find>
       <find>$logoFS</find>
@@ -99,6 +98,8 @@
       <find>sort</find>
       <find>failed</find>
       <find>even</find>
+      <find>shadow</find>
+      <find>sha</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -114,9 +115,9 @@
         <option value="$PROJECT_DIR$/menu.html" />
         <option value="$PROJECT_DIR$/js/reservation.js" />
         <option value="$PROJECT_DIR$/sass/sass-style.scss" />
-        <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/style.scss" />
       </list>
     </option>
   </component>
@@ -315,12 +316,12 @@
       <workItem from="1499430532746" duration="52991000" />
       <workItem from="1499609281720" duration="15068000" />
       <workItem from="1499630277216" duration="8198000" />
-      <workItem from="1499668891501" duration="5074000" />
+      <workItem from="1499668891501" duration="7349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193956000" />
+    <option name="totallyTimeSpent" value="196231000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,16 +548,6 @@
     <entry file="file://$PROJECT_DIR$/sass/sass-style.css" />
     <entry file="file://$PROJECT_DIR$/sass/sass-style.scss" />
     <entry file="file://$PROJECT_DIR$/css/sass-style.scss" />
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2360">
-          <caret line="296" column="37" lean-forward="false" selection-start-line="296" selection-start-column="37" selection-end-line="296" selection-end-column="37" />
-          <folding>
-            <element signature="e#5945#7621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -589,6 +580,16 @@
             <element signature="n#!!block;n#showReservations#0;n#!!block;n#Reservation#0" expanded="false" />
             <element signature="e#9960#10182#0" expanded="false" />
             <element signature="e#10294#10559#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="e#6360#8036#0" expanded="false" />
           </folding>
         </state>
       </provider>

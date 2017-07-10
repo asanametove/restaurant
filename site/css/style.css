@@ -136,6 +136,7 @@
     align-items: flex-start;
     padding: 30px; }
     .wrapper .menuSection .menuItems ul li p {
+      padding: 5px 0;
       font-size: 20px; }
     .wrapper .menuSection .menuItems ul li div {
       margin-left: 30px; }

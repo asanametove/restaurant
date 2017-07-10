@@ -108,7 +108,7 @@ function showEvents(data, $div) {
             if(prop !== "imageUrl") {
                 $("<p/>")
                     .addClass(prop)
-                    .text(prop.charAt(0).toUpperCase() + prop.substr(1) + ": " + data[i][prop])
+                    .text(capitalize(prop) + ": " + data[i][prop])
                     .appendTo($divInfo);
             }
         }
@@ -129,7 +129,7 @@ function showMenu(data, $div) {
             if(prop !== "imageUrl") {
                 $("<p/>")
                     .addClass(prop)
-                    .text(prop + ": " + data[i][prop])
+                    .text(capitalize(prop) + ": " + capitalize(data[i][prop]))
                     .appendTo($divInfo);
             }
         }
@@ -348,6 +348,10 @@ function Reservation(url, $section) {
         make: makeReservation,
         show: showReservations
     }
+}
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.substr(1);
 }
 
 /*

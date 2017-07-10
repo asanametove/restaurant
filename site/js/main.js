@@ -4,6 +4,7 @@ var eventsUrl = "http://localhost:8080/events";
 
 $(document).ready(function () {
     $.ajaxSetup({cache: false});
+
     $("#datePicker").datepicker();
     initTimePicker($("#timePicker"));
 
@@ -12,19 +13,7 @@ $(document).ready(function () {
     slider.start(2000);
 
                     // RESERVATION
-    //fillForm();
-    getFile("reservation", rsrvUrl, showReservations);
-
-    $("#reservationForm").on("submit", function (e) {
-        e.preventDefault();
-        if( $("#table").val() ) {
-            makeReservation(rsrvUrl, $(this).serialize());
-            $("#reservationForm")[0].reset();
-        }
-        else {
-            alert("Please, choose table");
-        }
-    });
+    var rsrv = new Reservation(rsrvUrl, $("#reservationSection"));
 
                   // MENU
     getFile("menu", menuUrl, showMenu, $("#menuSection .menuItems"));
@@ -36,31 +25,6 @@ $(document).ready(function () {
     $("body").append("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCndrFlZ8SaPRtfArycbpGbDszOVQLszWk&callback=initMap\"></script>");
     
 });
-
-function makeReservation(url, data) {
-    $.ajax({
-        type: "POST",
-        url: url,
-        data: data,
-        success: function (res) {
-            alert(res);
-        },
-        error:  function(res){
-            alert(res.responseText || "Reservation fail");
-        }
-    });
-    setTimeout( function () {
-        getFile("reservation", rsrvUrl, showReservations)
-        }, 500 );
-}
-
-function fillForm() {
-    document.forms[0].firstName.value = "Иван";
-    document.forms[0].lastName.value = "Иванов";
-    document.forms[0].date.value = "01/01/2017";
-    document.forms[0].time.value = "13:00";
-    document.forms[0].table.value = "table2";
-}
 
 function getFile(description, url, func, $element) {
     $.ajax({
@@ -176,18 +140,6 @@ function showMenu(data, $div) {
     pagin.init($ul, 3);
     var mySort = new Sort();
     mySort.setKeys($divInfo, $("#menuSortKey"), $ul);
-}
-
-function showReservations(data) {
-    $(".plan img").on("click", function () {
-        $("#table").val(this.id);
-    });
-
-    $(".table").addClass("free");
-    for(var i = 0; i < data.length; i++) {
-        var t = "#" + data[i].table;
-        $(t).removeClass("free").off("click");
-    }
 }
 
 function initTimePicker($element) {
@@ -329,3 +281,81 @@ function Pagination() {
         init: makePagination
     }
 }
+
+function Reservation(url, $section) {
+    var $form = $("form[name=reservationForm]", $section);
+    function makeReservation() {
+        var data = $form.serialize();
+        if(!data) {
+            throw Error("Reservation form not found");
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function (res) {
+                alert(res);
+            },
+            error:  function(res){
+                alert(res.responseText || "Reservation fail");
+            }
+        });
+        setTimeout( function () {
+            showReservations()
+        }, 500 );
+    }
+    function showReservations() {
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            success: function(data) {
+                setTables(data)
+            },
+            error:  function(res){
+                alert(res.responseText || "Failed to load reservations");
+            }
+        });
+        function setTables(data) {
+
+            // mark all tables as free
+            $(".table", $section)
+                .addClass("free")
+                .on("click", function () {
+                    $("input[name=table]", $form).val(this.id);
+                });
+
+            // mark reserved tables
+            for(var i = 0; i < data.length; i++) {
+                var t = "#" + data[i].table;
+                $(t).removeClass("free").off("click");
+            }
+        }
+    }
+    $form.on("submit", function (e) {
+        e.preventDefault();
+        if( $("input[name=table]", $form).val() ) {
+            makeReservation();
+            this.reset();
+        }
+        else {
+            alert("Please, choose table");
+        }
+    });
+    showReservations();
+
+    return {
+        make: makeReservation,
+        show: showReservations
+    }
+}
+
+/*
+function fillForm() {
+    document.forms[0].firstName.value = "Иван";
+    document.forms[0].lastName.value = "Иванов";
+    document.forms[0].date.value = "01/01/2017";
+    document.forms[0].time.value = "13:00";
+    document.forms[0].table.value = "table2";
+}
+*/

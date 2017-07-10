@@ -18,10 +18,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="67" column="84" lean-forward="false" selection-start-line="67" selection-start-column="84" selection-end-line="67" selection-end-column="84" />
+            <state relative-caret-position="420">
+              <caret line="69" column="55" lean-forward="false" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
               <folding>
-                <element signature="e#5197#5203#0" expanded="true" />
+                <element signature="e#5187#5193#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,7 +30,7 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="2360">
               <caret line="296" column="37" lean-forward="false" selection-start-line="296" selection-start-column="37" selection-end-line="296" selection-end-column="37" />
               <folding>
                 <element signature="e#5945#7621#0" expanded="false" />
@@ -42,12 +42,9 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="219" column="19" lean-forward="true" selection-start-line="219" selection-start-column="19" selection-end-line="219" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
-                <element signature="e#174#1189#0" expanded="false" />
-                <element signature="n#!!block;n#makeReservation#0" expanded="false" />
-                <element signature="n#!!block;n#fillForm#0" expanded="false" />
                 <element signature="n#!!block;n#getFile#0" expanded="false" />
                 <element signature="n#!!block;n#Sort#0" expanded="false" />
                 <element signature="n#!!block;n#setSortKeys#0;n#!!block;n#Sort#0" expanded="false" />
@@ -55,11 +52,16 @@
                 <element signature="n#!!block;n#initMap#0" expanded="false" />
                 <element signature="n#!!block;n#showEvents#0" expanded="false" />
                 <element signature="n#!!block;n#showMenu#0" expanded="false" />
-                <element signature="n#!!block;n#showReservations#0" expanded="false" />
+                <element signature="n#!!block;n#initTimePicker#0" expanded="false" />
                 <element signature="n#!!block;n#getChar#0;n#!!block;n#initTimePicker#0" expanded="false" />
                 <element signature="n#!!block;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#Pagination#0" expanded="false" />
                 <element signature="n#!!block;n#makePagination#0;n#!!block;n#Pagination#0" expanded="false" />
+                <element signature="n#!!block;n#Reservation#0" expanded="false" />
+                <element signature="n#!!block;n#makeReservation#0;n#!!block;n#Reservation#0" expanded="false" />
+                <element signature="n#!!block;n#showReservations#0;n#!!block;n#Reservation#0" expanded="false" />
+                <element signature="e#9960#10182#0" expanded="false" />
+                <element signature="e#10294#10559#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -95,8 +97,8 @@
       <find>$</find>
       <find>main</find>
       <find>sort</find>
-      <find>even</find>
       <find>failed</find>
+      <find>even</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -135,6 +137,17 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -190,7 +203,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.10.3" />
   </component>
   <component name="RecentsManager">
@@ -302,11 +315,12 @@
       <workItem from="1499430532746" duration="52991000" />
       <workItem from="1499609281720" duration="15068000" />
       <workItem from="1499630277216" duration="8198000" />
+      <workItem from="1499668891501" duration="5074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188280000" />
+    <option name="totallyTimeSpent" value="193956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +391,7 @@
         <state relative-caret-position="380">
           <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -405,7 +419,7 @@
         <state relative-caret-position="380">
           <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -433,7 +447,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -461,7 +475,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="43" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -488,7 +502,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="43" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -528,31 +542,14 @@
     <entry file="file://$PROJECT_DIR$/js/jquery.easyPaginate.js" />
     <entry file="file://$PROJECT_DIR$/reservation.html" />
     <entry file="file://$PROJECT_DIR$/menu.html" />
-    <entry file="file://$PROJECT_DIR$/js/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/reservation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!block;n#getReservations#0" expanded="false" />
-            <element signature="n#!!block;n#makeReservation#0" expanded="false" />
-            <element signature="n#!!block;n#fillForm#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/menu.js" />
+    <entry file="file://$PROJECT_DIR$/js/reservation.js" />
     <entry file="file://$PROJECT_DIR$/sass/sass-style.css" />
     <entry file="file://$PROJECT_DIR$/sass/sass-style.scss" />
     <entry file="file://$PROJECT_DIR$/css/sass-style.scss" />
     <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
+        <state relative-caret-position="2360">
           <caret line="296" column="37" lean-forward="false" selection-start-line="296" selection-start-column="37" selection-end-line="296" selection-end-column="37" />
           <folding>
             <element signature="e#5945#7621#0" expanded="false" />
@@ -562,22 +559,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="67" column="84" lean-forward="false" selection-start-line="67" selection-start-column="84" selection-end-line="67" selection-end-column="84" />
+        <state relative-caret-position="420">
+          <caret line="69" column="55" lean-forward="false" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
           <folding>
-            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5187#5193#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="219" column="19" lean-forward="true" selection-start-line="219" selection-start-column="19" selection-end-line="219" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#174#1189#0" expanded="false" />
-            <element signature="n#!!block;n#makeReservation#0" expanded="false" />
-            <element signature="n#!!block;n#fillForm#0" expanded="false" />
             <element signature="n#!!block;n#getFile#0" expanded="false" />
             <element signature="n#!!block;n#Sort#0" expanded="false" />
             <element signature="n#!!block;n#setSortKeys#0;n#!!block;n#Sort#0" expanded="false" />
@@ -585,11 +579,16 @@
             <element signature="n#!!block;n#initMap#0" expanded="false" />
             <element signature="n#!!block;n#showEvents#0" expanded="false" />
             <element signature="n#!!block;n#showMenu#0" expanded="false" />
-            <element signature="n#!!block;n#showReservations#0" expanded="false" />
+            <element signature="n#!!block;n#initTimePicker#0" expanded="false" />
             <element signature="n#!!block;n#getChar#0;n#!!block;n#initTimePicker#0" expanded="false" />
             <element signature="n#!!block;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#Pagination#0" expanded="false" />
             <element signature="n#!!block;n#makePagination#0;n#!!block;n#Pagination#0" expanded="false" />
+            <element signature="n#!!block;n#Reservation#0" expanded="false" />
+            <element signature="n#!!block;n#makeReservation#0;n#!!block;n#Reservation#0" expanded="false" />
+            <element signature="n#!!block;n#showReservations#0;n#!!block;n#Reservation#0" expanded="false" />
+            <element signature="e#9960#10182#0" expanded="false" />
+            <element signature="e#10294#10559#0" expanded="false" />
           </folding>
         </state>
       </provider>

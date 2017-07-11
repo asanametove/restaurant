@@ -8,23 +8,47 @@ $(document).ready(function () {
     $("#datePicker").datepicker();
     initTimePicker($("#timePicker"));
 
-                    // SLIDER
+    // SLIDER
     var slider = new Slider($("#mainSlider"));
     slider.start(2000);
 
-                    // RESERVATION
+    // RESERVATION
     var rsrv = new Reservation(rsrvUrl, $("#reservationSection"));
 
-                  // MENU
+    // MENU
     getFile("menu", menuUrl, showMenu, $("#menuSection .menuItems"));
 
-                // EVENTS
+    // EVENTS
     getFile("events", eventsUrl, showEvents, $("#eventsSection .eventsWrapper"));
 
-                // MAP
+    // PAGES
+    Pages($("header nav > ul > li > a"));
+
+
+    // MAP
     $("body").append("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCndrFlZ8SaPRtfArycbpGbDszOVQLszWk&callback=initMap\"></script>");
     
 });
+
+function Pages($navLinks) {
+    // $nav links - navigation menu links
+    // current page;
+    var $current;
+        $(document).scroll( function (e) {
+            var top = $(this).scrollTop();
+            if($current)
+                $current.removeClass("current");
+            for(var i = $navLinks.length - 1; i >= 0; i--) {
+                var id = $($navLinks[i]).attr("href");
+                var topOffset = parseInt($(id).offset().top) - parseInt($(id).css("padding-top"));
+                if( top >= topOffset) {
+                    $current = $($navLinks[i].parentNode);
+                    $current.addClass("current");
+                    break;
+                }
+            }
+        });
+}
 
 function getFile(description, url, func, $element) {
     $.ajax({

@@ -1,6 +1,6 @@
-var rsrvUrl = "http://localhost:8080/reservation";
-var menuUrl = "http://localhost:8080/menu";
-var eventsUrl = "http://localhost:8080/events";
+var rsrvUrl = "/reservation";
+var menuUrl = "/menu";
+var eventsUrl = "/events";
 
 $(document).ready(function () {
     $.ajaxSetup({cache: false});
@@ -59,7 +59,7 @@ function getFile(description, url, func, $element) {
             func(data, $element);
         },
         error:  function(){
-            alert("Failed to load data: " + description);
+            console.error("Failed to load data: " + description);
         }
     });
 }
@@ -318,10 +318,10 @@ function Reservation(url, $section) {
             url: url,
             data: data,
             success: function (res) {
-                alert(res);
+                console.error(res);
             },
             error:  function(res){
-                alert(res.responseText || "Reservation fail");
+                console.error(res.responseText || "Reservation fail");
             }
         });
         setTimeout( function () {
@@ -337,7 +337,7 @@ function Reservation(url, $section) {
                 setTables(data)
             },
             error:  function(res){
-                alert(res.responseText || "Failed to load reservations");
+                console.error(res.responseText || "Failed to load reservations");
             }
         });
         function setTables(data) {

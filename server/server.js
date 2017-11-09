@@ -4,29 +4,44 @@ const path = require('path');
 const app = express();
 const port = 11111;
 const public = path.join(__dirname, '../client');
-const dataFolder = path.join(__dirname, 'data');
+const MongoClient = require('mongodb').MongoClient
+const assert = require('assert');
+const url = 'mongodb://localhost:27017/restaurant';
 
 const api = [
   {
     url: '/reservation',
-    file: path.join(dataFolder, 'reservations.json')
+    collection: 'reservations'
   },
   {
     url: '/menu',
-    file: path.join(dataFolder, 'menu.json')
+    collection: 'menu'
   },
   {
     url: '/events',
-    file: path.join(dataFolder, 'events.json')
+    collection: 'events'
   }
 ]
 
+const sendCollection = (res, collection) => {
+  MongoClient.connect(url, (err, db) => {
+    assert.equal(null, err);
+    console.log(`Connection to DB opened. Try to read ${collection}.`);
+    db.collection(collection).find({}).toArray(function(err, docs) {
+      assert.equal(err, null);
+      res.send(docs);
+    });
+    db.close();
+    console.log('Connection to DB closed.\n')
+  });
+}
+
 app.use(express.static(public));
 
-api.forEach(({ url, file }) => {
+api.forEach(({ url, collection }) => {
   app.get(
     url, 
-    (req, res) => res.sendFile(file)
+    (req, res) => sendCollection(res, collection)
   )
 });
 

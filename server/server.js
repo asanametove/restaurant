@@ -1,9 +1,14 @@
 const express = require('express');
 const path = require('path');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
+const config = require('../dev.webpack.config');
+
+const compiler = webpack(config);
 
 const app = express();
 const port = 11111;
-const public = path.join(__dirname, '../client');
+const public = path.join(__dirname, '../client/dist');
 const MongoClient = require('mongodb').MongoClient
 const assert = require('assert');
 const url = 'mongodb://localhost:27017/restaurant';
@@ -35,6 +40,10 @@ const sendCollection = (res, collection) => {
     console.log('Connection to DB closed.\n')
   });
 }
+
+app.use(webpackDevMiddleware(compiler));
+
+app.use(require("webpack-hot-middleware")(compiler));
 
 app.use(express.static(public));
 

@@ -17,6 +17,14 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /.(js$|jsx$)/,
+        use:[
+          {
+            loader: "babel-loader"
+          }
+        ]
+      },
       { 
         test: /\.scss$/,
         use: [
@@ -46,7 +54,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Restaurant',
+      template: './client/src/index.template.html',
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ]

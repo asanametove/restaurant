@@ -38,7 +38,7 @@ function accept(req, res) {
     } else {
         res.statusCode = 404;
         res.end("Page not found");
-    };
+    }
 }
 
 // translate POST string to Object

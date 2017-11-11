@@ -24,7 +24,7 @@ const api = [
 ]
 const compiler = webpack(config);
 const app = express();
-const public = path.join(__dirname, '../client/dist');
+const publicPath = path.join(__dirname, '../client/dist');
 const dbUrl = 'mongodb://localhost:27017/restaurant';
 
 const sendCollection = (res, collection) => {
@@ -44,7 +44,7 @@ app.use(webpackDevMiddleware(compiler, {noInfo: true}));
 
 app.use(require("webpack-hot-middleware")(compiler));
 
-app.use(express.static(public));
+app.use(express.static(publicPath));
 
 api.forEach(({ url, collection }) => {
   app.get(

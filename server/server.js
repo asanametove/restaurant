@@ -1,18 +1,13 @@
 const express = require('express');
 const path = require('path');
-const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
-const config = require('../dev.webpack.config');
-
-const compiler = webpack(config);
-
-const app = express();
-const port = 11111;
-const public = path.join(__dirname, '../client/dist');
+const webpackDevMiddleware = require('webpack-dev-middleware');
 const MongoClient = require('mongodb').MongoClient
 const assert = require('assert');
-const url = 'mongodb://localhost:27017/restaurant';
 
+const config = require('../dev.webpack.config');
+
+const port = 11111;
 const api = [
   {
     url: '/reservation',
@@ -27,9 +22,13 @@ const api = [
     collection: 'events'
   }
 ]
+const compiler = webpack(config);
+const app = express();
+const public = path.join(__dirname, '../client/dist');
+const dbUrl = 'mongodb://localhost:27017/restaurant';
 
 const sendCollection = (res, collection) => {
-  MongoClient.connect(url, (err, db) => {
+  MongoClient.connect(dbUrl, (err, db) => {
     assert.equal(null, err);
     console.log(`Connection to DB opened. Try to read ${collection}.`);
     db.collection(collection).find({}).toArray(function(err, docs) {
@@ -41,7 +40,7 @@ const sendCollection = (res, collection) => {
   });
 }
 
-app.use(webpackDevMiddleware(compiler));
+app.use(webpackDevMiddleware(compiler, {noInfo: true}));
 
 app.use(require("webpack-hot-middleware")(compiler));
 

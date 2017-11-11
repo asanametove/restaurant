@@ -4,11 +4,10 @@ const webpack = require('webpack');
 
 const srcPath = path.resolve(__dirname, 'client', 'src');
 const distPath = path.resolve(__dirname, 'client', 'dist');
-const serverPath = path.resolve
 
 module.exports = {
   entry: [
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?noInfo=true',
     path.resolve(srcPath, 'index.js')
   ],
   devtool: 'inline-source-map',

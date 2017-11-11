@@ -1,4 +1,11 @@
 import './scss/main.scss';
-import print from './print'
+import main from './main'
 
-print();
+main();
+
+if (module.hot) {
+  module.hot.accept('./main', () => {
+    const main = require('./main').default;
+    main();
+  });
+}

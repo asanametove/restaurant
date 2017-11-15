@@ -10,15 +10,15 @@ const config = require('../dev.webpack.config');
 const port = 11111;
 const api = [
   {
-    url: '/reservation',
+    url: 'api/reservation',
     collection: 'reservations'
   },
   {
-    url: '/menu',
+    url: 'api/menu',
     collection: 'menu'
   },
   {
-    url: '/events',
+    url: 'api/events',
     collection: 'events'
   }
 ]
@@ -44,13 +44,17 @@ app.use(webpackDevMiddleware(compiler, {noInfo: true}));
 
 app.use(require("webpack-hot-middleware")(compiler));
 
-app.use(express.static(publicPath));
+//app.use(express.static(publicPath));
 
 api.forEach(({ url, collection }) => {
   app.get(
-    url, 
+    url,
     (req, res) => sendCollection(res, collection)
   )
+});
+
+app.get('*', function(req, res){
+  res.sendfile(`${publicPath}/index.html`);
 });
 
 app.listen(port, function () {

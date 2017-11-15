@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App/App.jsx';
+import App from './components/app/app.jsx';
 import './scss/main.scss';
 
 ReactDOM.render(
@@ -10,8 +10,8 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept('./components/App/App.jsx', () => {
-    const App = require('./components/App/App.jsx').default;
+  module.hot.accept('./components/app/app.jsx', () => {
+    const App = require('./components/app/app.jsx').default;
     ReactDOM.render(
       <App />,
       document.getElementById('root'),

@@ -8,7 +8,7 @@ const distPath = path.resolve(__dirname, 'client', 'dist');
 module.exports = {
   entry: [
     'webpack-hot-middleware/client?noInfo=true',
-    path.resolve(srcPath, 'index.js')
+    path.resolve(srcPath, 'index.jsx')
   ],
   devtool: 'inline-source-map',
   output: {
@@ -18,22 +18,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.(js$|jsx$)/,
+        test: /.jsx$/,
+        include: srcPath,
         use:[
           {
             loader: "babel-loader"
           }
         ]
       },
-      { 
+      {
         test: /\.scss$/,
         use: [
           {
             loader: "style-loader"
-          }, 
+          },
           {
             loader: "css-loader"
-          }, 
+          },
           {
             loader: "sass-loader",
           }

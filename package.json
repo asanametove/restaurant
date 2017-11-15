@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/server.js --watch ./server/"
+    "test": "jest",
+    "start": "nodemon ./server/server.js --watch ./server/",
+		"lint": "eslint ./ --ignore-path .gitignore --fix"
   },
   "author": "",
   "license": "ISC",
@@ -13,13 +14,16 @@
     "express": "^4.16.2",
     "mongodb": "^2.2.33",
     "react": "^16.1.0",
-    "react-dom": "^16.1.0"
+    "react-dom": "^16.1.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.11.0",

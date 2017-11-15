@@ -54,7 +54,7 @@ api.forEach(({ url, collection }) => {
 });
 
 app.get('*', function(req, res){
-  res.sendfile(`${publicPath}/index.html`);
+  res.sendFile(`${publicPath}/index.html`);
 });
 
 app.listen(port, function () {

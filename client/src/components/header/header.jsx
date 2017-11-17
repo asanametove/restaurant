@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import NavigationBar from '../navigation-bar/navigation-bar.jsx';
 import * as routes from '../../constants/routes';
-import './header.scss';
 
 const Header = () => {
   const {

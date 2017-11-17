@@ -1,38 +1,41 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
-import NavigationBar from '../navigation-bar/navigation-bar.jsx';
 import * as routes from '../../constants/routes';
 
-const Header = () => {
+const getNavLinks = () => {
+  const navLinks = [];
   const {
-    home, menu, events, reservation, about, contact
+    menu, events, reservation, about, contact
   } = routes;
 
-  return (
-    <header className="header">
-      <div className="logo">
-        <NavLink to={home}>Restaurant</NavLink>
+  navLinks.push({to: menu, title: 'menu'});
+  navLinks.push({to: events, title: 'events'});
+  navLinks.push({to: reservation, title: 'reservation'});
+  navLinks.push({to: about, title: 'about'});
+  navLinks.push({to: contact, title: 'contact'});
+
+  return navLinks.map(({ to, title }) => (
+    <NavLink key={to} to={to} activeClassName='active' className="nav-item nav-link">
+      {title}
+    </NavLink>
+  ));
+}
+
+const headerClass = 'container';
+const navClass = 'navbar navbar-expand-lg navbar-dark bg-primary justify-content-between';
+const logoClass = 'navbar-brand nav-item nav-link';
+const linksClass = 'navbar-nav';
+
+const Header = () => (
+  <header className={headerClass}>
+    <nav className={navClass}>
+      <Link to={routes.home} className={logoClass}>Restaurant</Link>
+      <div className={linksClass}>
+        { getNavLinks() }
       </div>
-      <NavigationBar>
-        <NavLink to={menu} activeClassName='current'>
-          menu
-        </NavLink>
-        <NavLink to={events} activeClassName='current'>
-          events
-        </NavLink>
-        <NavLink to={reservation} activeClassName='current'>
-          reservation
-        </NavLink>
-        <NavLink to={about} activeClassName='current'>
-          about
-        </NavLink>
-        <NavLink to={contact} activeClassName='current'>
-          contact
-        </NavLink>
-      </NavigationBar>
-    </header>
-  );
-};
+    </nav>
+  </header>
+);
 
 export default Header;

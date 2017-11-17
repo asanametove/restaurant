@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="wrapper">
+      <div className="container">
         <Header />
         <Switch>
           <Route path={home} component={Home} exact />

@@ -25,14 +25,16 @@ const App = () => {
     <BrowserRouter>
       <div className="container">
         <Header />
-        <Switch>
-          <Route path={home} component={Home} exact />
-          <Route path={menu} component={Menu} exact />
-          <Route path={events} component={Events} exact />
-          <Route path={reservation} component={Reservation} exact />
-          <Route path={about} component={About} exact />
-          <Route path={contact} component={Contact} exact />
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route path={home} component={Home} exact />
+            <Route path={menu} component={Menu} exact />
+            <Route path={events} component={Events} exact />
+            <Route path={reservation} component={Reservation} exact />
+            <Route path={about} component={About} exact />
+            <Route path={contact} component={Contact} exact />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );

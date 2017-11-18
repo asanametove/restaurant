@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import './header.scss';
 
 import * as routes from '../../constants/routes';
 
@@ -22,7 +23,7 @@ const getNavLinks = () => {
   ));
 }
 
-const headerClass = 'container';
+const headerClass = 'container header';
 const navClass = 'navbar navbar-expand-lg navbar-dark bg-primary justify-content-between';
 const logoClass = 'navbar-brand nav-item nav-link';
 const linksClass = 'navbar-nav';
